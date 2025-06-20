@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:id="@+id/llh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/purple"
+        android:background="@drawable/rounded_border"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <!-- Nome -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome: "
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"/>
+        <TextView
+            android:id="@+id/textview_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="25sp"
+            android:textStyle="normal"
+            android:paddingBottom="10dp"/>
+
+        <!-- Cognome -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cognome: "
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"/>
+        <TextView
+            android:id="@+id/textview_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="25sp"
+            android:textStyle="normal"
+            android:paddingBottom="10dp"/>
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"/>
+        <TextView
+            android:id="@+id/textview_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="25sp"
+            android:textStyle="normal"
+            android:paddingBottom="10dp"/>
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="5dp"/>
+        <TextView
+            android:id="@+id/textview_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="25sp"
+            android:textStyle="normal"
+            android:paddingBottom="20dp"/>
+    </LinearLayout>
+
+
+    <!-- Bottone per modificare i dati -->
+    <Button
+        android:layout_below="@id/llh"
+        android:id="@+id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#864AFD"
+        android:textStyle="bold"
+        android:text="Modifica Dati"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false" />
+
+    <!-- Bottone per il logout -->
+    <Button
+        android:layout_below="@id/button_edit"
+        android:id="@+id/button_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#864AFD"
+        android:textStyle="bold"
+        android:text="Logout"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="20dp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

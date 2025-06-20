@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_border_list_element_basic">
+
+    <TextView
+        android:id="@+id/tv_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome Obiettivo"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_importo_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importo Target"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_importo_rimanente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importo Rimanente"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#864AFD"
+            android:textStyle="bold"
+            android:text="Elimina"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#864AFD"
+            android:textStyle="bold"
+            android:text="Modifica"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
